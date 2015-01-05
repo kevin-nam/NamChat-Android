@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.knam.namchat.android.ChatActivity" >
+
+    <TextView
+        android:id="@+id/Console"
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:layout_weight="1.31" 
+        android:background="@drawable/back"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.80" >
+
+        <EditText
+            android:id="@+id/MessageBox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.97"
+            android:ems="10"
+            android:hint="Enter text here" />
+
+        <Button
+            android:id="@+id/SendMessage"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send" />
+
+    </LinearLayout>
+
+</LinearLayout>
